@@ -29,4 +29,7 @@ void setup() {
 }
 
 void loop() {
+
+    // Read digital value from touch sensor
+    touchState = digitalRead(TOUCH_PIN);
 }
