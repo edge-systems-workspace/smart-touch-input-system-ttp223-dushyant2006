@@ -28,8 +28,17 @@ void setup() {
     Serial.println("Touch Detection System Initialized");
 }
 
+/**
+ * @brief Continuously reads touch sensor and checks touch status.
+ */
 void loop() {
 
-    // Read digital value from touch sensor
     touchState = digitalRead(TOUCH_PIN);
+
+    if (touchState == HIGH) {
+        Serial.println("Touch Detected");
+    }
+    else {
+        Serial.println("No Touch");
+    }
 }
