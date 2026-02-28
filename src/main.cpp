@@ -29,7 +29,10 @@ void setup() {
 }
 
 /**
- * @brief Continuously reads touch sensor and checks touch status.
+ * @brief Continuously reads touch sensor and prints touch status.
+ *
+ * HIGH -> Touch detected
+ * LOW  -> No touch
  */
 void loop() {
 
@@ -41,4 +44,6 @@ void loop() {
     else {
         Serial.println("No Touch");
     }
+
+    delay(300);
 }
