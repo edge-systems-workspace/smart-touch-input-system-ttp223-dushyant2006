@@ -17,7 +17,15 @@
 // Create variable to store touch state
 int touchState;
 
+/**
+ * @brief Initializes serial communication and touch sensor pin.
+ */
 void setup() {
+
+    Serial.begin(9600);
+    pinMode(TOUCH_PIN, INPUT);
+
+    Serial.println("Touch Detection System Initialized");
 }
 
 void loop() {
